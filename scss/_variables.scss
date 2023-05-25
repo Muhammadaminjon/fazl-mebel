@@ -1,0 +1,74 @@
+$pr-font: "Raleway";
+$sc-font: "Montserrat";
+
+@mixin media($w) {
+  @media (max-width: $w) {
+    @content;
+  }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+html {
+  user-select: none;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+button {
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: #dcbfa4;
+  }
+}
+a {
+  text-decoration: none !important;
+}
+h1 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+img {
+  object-position: center;
+  object-fit: cover;
+}
+.container {
+  width: 100%;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.site-btn {
+  padding: 15px 35px;
+  font-family: $pr-font;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  background: #634121;
+  border-radius: 12px;
+}

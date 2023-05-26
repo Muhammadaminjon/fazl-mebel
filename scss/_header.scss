@@ -7,7 +7,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    @include media(400px) {
+    @include media(800px) {
       padding: 24px 0px 60px;
       flex-direction: column;
       gap: 24px;
@@ -16,8 +16,17 @@
       display: flex;
       align-items: center;
       gap: 34px;
+      @include media(1200px) {
+        gap: 18px;
+      }
+      @include media(600px) {
+        gap: 13px;
+      }
       @include media(400px) {
         gap: 21px;
+      }
+      @include media(340px) {
+        gap: 5px;
       }
       .site-logo {
         display: flex;
@@ -26,6 +35,10 @@
         @include media(400px) {
           width: 87px;
           height: 30px;
+        }
+        @include media(1200px) {
+          width: 190px;
+          height: 50px;
         }
       }
       .dropdown {
@@ -44,15 +57,15 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 17px 26px;
           gap: 8px;
           img {
             display: flex;
             width: 24px;
             height: 24px;
           }
+          @include media(600px) {
+          }
           @include media(400px) {
-            padding: 7px 14px;
           }
         }
         &-text {
@@ -79,6 +92,17 @@
           img {
             width: 44px;
             height: 44px;
+          }
+        }
+        @include media(600px) {
+          a {
+            font-size: 15px;
+            line-height: 20px;
+            gap: 3px;
+            img {
+              width: 34px;
+              height: 34px;
+            }
           }
         }
         @include media(400px) {

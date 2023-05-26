@@ -61,6 +61,9 @@ img {
   max-width: 1340px;
   margin: 0 auto;
   padding: 0 20px;
+  @include media(400px){
+    padding: 0 11px;
+  }
 }
 .site-btn {
   padding: 15px 35px;

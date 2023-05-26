@@ -1,0 +1,109 @@
+.about-section {
+  padding: 80px 0;
+  .container {
+  }
+  .about-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .left-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 549px;
+      height: 497px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid #a49384;
+      border-radius: 12px;
+      .video-frame {
+        position: absolute;
+        top: -30px;
+        left: 50px;
+        iframe {
+          width: 728px;
+          height: 497px;
+          border-radius: 12px;
+        }
+      }
+      .text-frame {
+        position: absolute;
+        bottom: -24px;
+        height: 44px;
+        width: 445px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background: #ffffff;
+        .text {
+          font-family: $pr-font;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 21px;
+          color: #aaa7a4;
+        }
+      }
+    }
+    .right-wrapper {
+      width: 100%;
+      max-width: 410px;
+      margin-top: -30px;
+      .r-title {
+        font-family: $pr-font;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 49px;
+        color: #231202;
+        margin-bottom: 20px;
+      }
+      .r-text {
+        font-family: $pr-font;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #312922;
+        margin-bottom: 68px;
+      }
+      .r-form {
+        &-title {
+          font-family: $sc-font;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 150%;
+          color: #231202;
+          padding-bottom: 20px;
+        }
+        label {
+          font-family: $pr-font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          color: #746f6b;
+          padding-bottom: 12px;
+        }
+        input {
+            width: 100%;
+          max-width: 409px;
+          height: 51px;
+          background: #fcf9f7;
+          border: 2px solid #a8a39f;
+          border-radius: 12px;
+          padding-left: 18px;
+          outline: none;
+          margin-bottom: 30px;
+          &::placeholder {
+            font-family: $sc-font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 150%   ;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

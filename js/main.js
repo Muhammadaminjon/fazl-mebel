@@ -16,6 +16,7 @@ const grey = document.querySelector(".grey");
 const heromodal = document.querySelector(".hero-modal");
 const about = document.querySelector("#about");
 const assortment = document.querySelector("#assortment");
+const works = document.querySelector("#works");
 
 heroBtn.addEventListener("click", () => {
   grey.style.display = "block";
@@ -26,6 +27,10 @@ assortment.addEventListener("click", () => {
   heromodal.classList.toggle("active");
 });
 about.addEventListener("click", () => {
+  grey.style.display = "block";
+  heromodal.classList.toggle("active");
+});
+works.addEventListener("click", () => {
   grey.style.display = "block";
   heromodal.classList.toggle("active");
 });

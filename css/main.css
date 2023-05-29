@@ -1384,3 +1384,186 @@ li {
   width: 100%;
   height: 252px;
 }
+
+.comments {
+  width: 100%;
+  background: #fff8f2;
+  padding: 40px 0;
+}
+.comments-wrappers .comment-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.comments-wrappers .comment-wrapper .title {
+  text-align: left;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 53px;
+  color: #231202;
+}
+.comments-wrappers .comment-wrapper .granfather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 40px 0;
+}
+.comments-wrappers .comment-wrapper .granfather .father {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz1 {
+  width: 100%;
+  max-width: 692px;
+  height: 337px;
+  padding: 24px;
+  background: #ffffff;
+  border: 0.5px solid #a49384;
+  border-radius: 12px;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz1 .mijoz-wrapper .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  justify-self: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz1 .mijoz-wrapper .top img {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz1 .mijoz-wrapper .top .top-text {
+  width: 100%;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz1 .mijoz-wrapper .top .top-text .title {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 32px;
+  color: #3f3933;
+  margin-bottom: 5px;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz1 .mijoz-wrapper .top .top-text .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #9e9a95;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz1 .mijoz-wrapper .top .top-text .name span {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #9e9a95;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz1 .mijoz-wrapper .bottom {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #223838;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz2 {
+  width: 100%;
+  max-width: 488px;
+  height: 337px;
+  padding: 24px;
+  background: #ffffff;
+  border: 0.5px solid #a49384;
+  border-radius: 12px;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz2 .mijoz-wrapper .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  justify-self: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz2 .mijoz-wrapper .top img {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz2 .mijoz-wrapper .top .top-text {
+  width: 100%;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz2 .mijoz-wrapper .top .top-text .title {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 32px;
+  color: #3f3933;
+  margin-bottom: 5px;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz2 .mijoz-wrapper .top .top-text .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #9e9a95;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz2 .mijoz-wrapper .top .top-text .name span {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #9e9a95;
+}
+.comments-wrappers .comment-wrapper .granfather .father .mijoz2 .mijoz-wrapper .bottom {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #223838;
+}

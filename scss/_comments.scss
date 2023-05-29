@@ -1,0 +1,153 @@
+.comments {
+  width: 100%;
+  background: #fff8f2;
+  padding: 40px 0;
+  .container {
+  }
+  &-wrappers {
+    .comment-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .title {
+        text-align: left;
+        font-family: $pr-font;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 53px;
+        color: #231202;
+      }
+      .granfather {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 0;
+
+        .father {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          .mijoz1 {
+            width: 100%;
+            max-width: 692px;
+            height: 337px;
+            padding: 24px;
+            background: #ffffff;
+            border: 0.5px solid #a49384;
+            border-radius: 12px;
+            .mijoz-wrapper {
+              .top {
+                display: flex;
+                align-items: flex-start;
+                justify-self: start;
+                gap: 10px;
+                margin-bottom: 20px;
+                img {
+                  width: 79px;
+                  height: 79px;
+                  border-radius: 50%;
+                }
+                .top-text {
+                  width: 100%;
+                  .title {
+                    font-family: $pr-font;
+                    font-weight: 600;
+                    font-size: 23px;
+                    line-height: 32px;
+                    color: #3f3933;
+                    margin-bottom: 5px;
+                  }
+                  .name {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-family: $pr-font;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #9e9a95;
+                    span {
+                      font-family: $pr-font;
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 22px;
+                      color: #9e9a95;
+                    }
+                  }
+                }
+              }
+              .bottom {
+                font-family: $pr-font;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                color: #223838;
+              }
+            }
+          }
+          .mijoz2 {
+            width: 100%;
+            max-width: 488px;
+            height: 337px;
+            padding: 24px;
+            background: #ffffff;
+            border: 0.5px solid #a49384;
+            border-radius: 12px;
+            .mijoz-wrapper {
+              .top {
+                display: flex;
+                align-items: flex-start;
+                justify-self: start;
+                gap: 10px;
+                margin-bottom: 20px;
+                img {
+                  width: 79px;
+                  height: 79px;
+                  border-radius: 50%;
+                }
+                .top-text {
+                  width: 100%;
+                  .title {
+                    font-family: $pr-font;
+                    font-weight: 600;
+                    font-size: 23px;
+                    line-height: 32px;
+                    color: #3f3933;
+                    margin-bottom: 5px;
+                  }
+                  .name {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-family: $pr-font;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #9e9a95;
+                    span {
+                      font-family: $pr-font;
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 22px;
+                      color: #9e9a95;
+                    }
+                  }
+                }
+              }
+              .bottom {
+                font-family: $pr-font;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                color: #223838;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

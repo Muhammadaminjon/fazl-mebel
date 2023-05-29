@@ -31,7 +31,7 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-down-left" data-aos-duration="700" class="nav-right">
+                <div class="nav-right" data-aos="fade-down-left" data-aos-duration="700">
 
                     <div class="work-t">
                         <h2 class="work-t-title">09:00 - 20:00</h2>
@@ -54,7 +54,7 @@
         </div>
     </header>
 
-    <main style="display: none;"class="main">
+    <main class="main">
         <!-- hero section -->
         <div class="hero-section">
             <div class="container">
@@ -136,7 +136,7 @@
                         <label for="phone"><span>*</span>Telefon raqamingiz</label>
                         <input type="text" id="phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
                             pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="( __ ) ___-__-__"></input>
-                        <button type="submit" class="site-btn">Yuborish</button>
+                        <button id="hero-btn" class="site-btn">Buyurtma berish</button>
                     </form>
                 </div>
             </div>
@@ -156,7 +156,7 @@
         <!-- hero section end -->
 
         <!-- About section -->
-        <div style="display: none;" class="about-section">
+        <div class="about-section">
             <div class="container">
                 <div class="about-wrapper">
                     <div class="left-wrapper">
@@ -183,7 +183,7 @@
                                 onkeypress='return event.charCode >= 48 && event.charCode <= 57'
                                 pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="+998">
                             </input> <br>
-                            <button type="submit" class="site-btn">Yuborish</button>
+                            <button type="submit" id="about" class="site-btn">Yuborish</button>
                         </div>
                     </div>
                 </div>
@@ -192,8 +192,158 @@
         <!-- About section end -->
 
         <!-- Assortment -->
+        <div class="assortment">
+            <div class="container">
+                <div class="assortment-nav">
+                    <h1 class="assortment-nav-title">Assortiment</h1>
+                    <nav class="assortment-nav-links">
+                        <ul class="assortment-nav-list">
+                            <li class="assortment-nav-list-item">
+                                <p class="assortment-nav-list-item__link all">Barchasi</p>
+                            </li>
+                            <li class="assortment-nav-list-item">
+                                <p class="assortment-nav-list-item__link mebel">Mebel</p>
+                            </li>
+                            <li class="assortment-nav-list-item">
+                                <p class="assortment-nav-list-item__link ofic">Ofis uchun</p>
+                            </li>
+                            <li class="assortment-nav-list-item">
+                                <p class="assortment-nav-list-item__link ckock">Oshxona uchun</p>
+                            </li>
+                            <li class="assortment-nav-list-item">
+                                <p class="assortment-nav-list-item__link kop">Yotoqxona uchun</p>
+                            </li>
+                            <li class="assortment-nav-list-item">
+                                <p class="assortment-nav-list-item__link lox">Yosh bollar xonasi uchun</p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="assortment-photo">
+                    <div class="parent">
+                        <div class="div1"><img src="./images/jpg/Rectangle 55.jpg" alt=""></div>
+                        <div class="div2"><img src="./images/jpg/Rectangle 56.jpg" alt=""></div>
+                        <div class="div3"><img src="./images/jpg/Rectangle 57.jpg" alt=""></div>
+                        <div class="div4"><img src="./images/jpg/Rectangle 58.jpg" alt=""></div>
+                        <div class="div5"><img src="./images/jpg/Rectangle 59.jpg" alt=""></div>
+                        <div class="div6"><img src="./images/jpg/Rectangle 60.jpg" alt=""></div>
+                        <div class="div7"><img src="./images/jpg/Rectangle 61.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="assortment-bottom">
+                    <p class="bottom-text"><span>*</span> Butun assortiment ro’yxatini yuklab oling!</p>
+                    <button id="assortment" class="site-btn">Yuklab olish</button>
+                </div>
+            </div>
+        </div>
         <!-- Assortment end -->
+
+        <!-- O'lcham -->
+        <div class="olcham">
+            <div class="container">
+                <div class="olcham-wrapper">
+                    <div class="olcham-left">
+                        <div class="olcham-left-t">
+                            <h3 class="title">Aynan qandaydur o’lcham bo’yicha istalgan mebelingizni yasattirmoqchimsiz?
+                            </h3>
+                            <p class="text">Bizning mutaxassislar sizga <span>bepul</span> siz xoxlagan olchamda va
+                                materialda mebel narxini chiqarib berishadi</p>
+                        </div>
+                        <div class="olcham-left-b">
+                            <h2 class="sub-title">Mutaxassis orqali sizga kerakli mebel narxini <span>BEPUL</span>
+                                xisoblash uchun telefon raqamingizni qoldiring</h2>
+                            <div class="olcham-input-wrapper">
+                                <form action="./index.html">
+                                    <label for="ism">Ismingiz</label>
+                                    <input id="ism" type="text" placeholder="Palonchiyev Pistonchi" required>
+                                    <label for="phone">Telefon raqamingiz</label>
+                                    <input type="text" id="phone"
+                                        onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                                        pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="+998"></input>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="olcham-right">
+                        <div class="olcham-img-wrapper">
+                            <img src="./images/jpg/olcham.jpg" alt="olcham rasm">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="b">
+                    <button id="olcham" class="site-btn">Yuborish</button>
+                    <p><span>*</span> Konsultatsiya olish mutlaqo bepul bo’lib, sizdan hech qanday
+                        to’lovni amalga
+                        oshirish talab qilinmaydi!</p>
+                </div>
+            </div>
+        </div>
+        <!-- O'lcham end -->
+
+        <!-- choose -->
+        <div class="choose">
+            <div class="container">
+                <div class="choose-wrapper">
+                    <h2 class="title">Nima uchun mijozlar aynan bizni tanlashadi?</h2>
+                    <div class="parent">
+                        <div class="div1">
+                            <div class="choose-item">
+                                <img src="./images/png/1.png" alt="">
+                                <div class="text-w">
+                                    <h3 class="title">Muddatga amal qilish</h3>
+                                    <p class="text">Biz buyurtmani muddatida topshirishni eng muhim ish deb bilamiz!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div2">
+                            <div class="choose-item">
+                                <img src="./images/png/2.png" alt="">
+                                <div class="text-w">
+                                    <h3 class="title">Sifatli materiallardan foydalanish</h3>
+                                    <p class="text">Bizga miqdordan ko’ra, sifat muhiroqdir!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div3">
+                            <div class="choose-item">
+                                <img src="./images/png/3.png" alt="">
+                                <div class="text-w">
+                                    <h3 class="title">Mijozga o’zgacha yondashuv</h3>
+                                    <p class="text">Biz doimo Xar bir mijozga o’zgacha yondashamiz!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div4">
+                            <div class="choose-item">
+                                <img src="./images/png/4.png" alt="">
+                                <div class="text-w">
+                                    <h3 class="title">Mebelni professional darajada yeg’ish</h3>
+                                    <p class="text">Biz xar bir mebelni millimetrigacha xisoblab, professional darajada
+                                        yeg’ib ketamiz!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- choose end -->
+
+        
     </main>
+    <!-- <div class="parent">
+        <div class="div1"> </div>
+        <div class="div2"> </div>
+        <div class="div3"> </div>
+        <div class="div4"> </div>
+        <div class="div5"> </div>
+        <div class="div6"> </div>
+        <div class="div7"> </div>
+        <div class="div8"> </div>
+        <div class="div9"> </div>
+    </div> -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>

@@ -1,0 +1,131 @@
+.assortment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .container {
+  }
+  &-nav {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    &-title {
+      font-family: $pr-font;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 49px;
+      margin-left: 60px;
+    }
+    &-links {
+      .assortment-nav-list {
+        display: flex;
+        align-items: center;
+        &-item {
+          &__link {
+            font-family: $pr-font;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+            color: #746f6b;
+            cursor: pointer;
+            border-radius: 12px 12px 0 0;
+            padding: 18px 17px;
+            &:hover {
+              color: #4b372c;
+            }
+          }
+          .filteractive {
+            color: black;
+            background: #eee2d7;
+          }
+        }
+      }
+    }
+  }
+  &-photo {
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 18px;
+      grid-row-gap: 22px;
+      background: #eee2d7;
+      border-radius: 12px;
+      padding: 50px;
+    }
+
+    .div1 {
+      grid-area: 1 / 1 / 2 / 4;
+      img {
+        width: 100%;
+        height: 333px;
+      }
+    }
+    .div2 {
+      grid-area: 1 / 4 / 2 / 6;
+      img {
+        width: 100%;
+        height: 333px;
+      }
+    }
+    .div3 {
+      grid-area: 2 / 1 / 3 / 3;
+      img {
+        width: 100%;
+        height: 333px;
+      }
+    }
+    .div4 {
+      grid-area: 2 / 3 / 3 / 6;
+      img {
+        width: 100%;
+        height: 333px;
+      }
+    }
+    .div5 {
+      grid-area: 3 / 1 / 5 / 4;
+      img {
+        width: 100%;
+        height: 695px;
+      }
+    }
+    .div6 {
+      grid-area: 3 / 4 / 4 / 6;
+      img {
+        width: 100%;
+        height: 333px;
+      }
+    }
+    .div7 {
+      grid-area: 4 / 4 / 5 / 6;
+      img {
+        width: 100%;
+        height: 333px;
+      }
+    }
+    img {
+      border-radius: 12px;
+    }
+  }
+  &-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 30px;
+    margin-right: 80px;
+    gap: 30px;
+    .bottom-text {
+      font-family: $pr-font;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+      color: #87abab;
+      span{
+        content: '';
+        font-size: 30px;
+        line-height: 37px;
+        color: #f50000;
+      }
+    }
+  }
+}

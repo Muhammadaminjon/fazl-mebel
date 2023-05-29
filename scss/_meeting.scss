@@ -1,0 +1,56 @@
+.meeting {
+  width: 100%;
+  background: #f4cfaf;
+  padding: 30px 0;
+  .container {
+  }
+  &-wrapper {
+    margin: 0 50px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    .title {
+      font-family: $pr-font;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: #413021;
+      margin-bottom: 12px;
+    }
+    form {
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      gap: 36px;
+      .name-w {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        label {
+          font-family: $pr-font;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+          color: #523d2b;
+        }
+        input {
+          width: 100%;
+          max-width: 309px;
+          padding: 12px 18px;
+          background: #fcf9f7;
+          border: 2px solid #9f9489;
+          border-radius: 12px;
+          font-family: $sc-font;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 27px;
+          color: #000;
+        }
+      }
+      button {
+        padding: 12px 35px;
+      }
+    }
+  }
+}

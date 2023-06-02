@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Fazl mebel</title>
 </head>
@@ -22,7 +24,20 @@
                             <p class="dropdown-text">uz</p>
                             <img src="./images/svg/arrow.svg" alt="arrow icon">
                         </div>
+                        <div class="menu-lang">
+                            <div class="lang">ru</div>
+                        </div>
                     </button>
+
+                    <!-- <button class="dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        uz
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">ru</a></li>
+                        <li><a class="dropdown-item" href="#">en</a></li>
+                    </ul> -->
+
+
                     <div class="location">
                         <a href="#">
                             <img src="./images/svg/location.svg" alt="location icon">
@@ -194,44 +209,94 @@
         <!-- Assortment -->
         <div class="assortment">
             <div class="container">
-                <div class="assortment-nav">
-                    <h1 class="assortment-nav-title">Assortiment</h1>
-                    <nav class="assortment-nav-links">
-                        <ul class="assortment-nav-list">
-                            <li class="assortment-nav-list-item">
-                                <p class="assortment-nav-list-item__link all">Barchasi</p>
+                <nav class="navbar navbar-expand-custom navbar-mainbg">
+                    <a class="navbar-brand navbar-logo" href="#">Assortiment</a>
+                    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <div class="hori-selector">
+                                <div class="left"></div>
+                                <div class="right"></div>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);"><i
+                                        class="fas fa-tachometer-alt"></i>Barchasi</a>
                             </li>
-                            <li class="assortment-nav-list-item">
-                                <p class="assortment-nav-list-item__link mebel">Mebel</p>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="javascript:void(0);"><i
+                                        class="far fa-address-book"></i>Mebel</a>
                             </li>
-                            <li class="assortment-nav-list-item">
-                                <p class="assortment-nav-list-item__link ofic">Ofis uchun</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Ofis
+                                    uchun</a>
                             </li>
-                            <li class="assortment-nav-list-item">
-                                <p class="assortment-nav-list-item__link ckock">Oshxona uchun</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);"><i
+                                        class="far fa-calendar-alt"></i>Oshxona uchun</a>
                             </li>
-                            <li class="assortment-nav-list-item">
-                                <p class="assortment-nav-list-item__link kop">Yotoqxona uchun</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Yotoqxona
+                                    uchun</a>
                             </li>
-                            <li class="assortment-nav-list-item">
-                                <p class="assortment-nav-list-item__link lox">Yosh bollar xonasi uchun</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Yosh bollar
+                                    xonasi uchun</a>
                             </li>
                         </ul>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
                 <div class="assortment-photo">
-                    <div class="parent">
-                        <div class="div1"><img src="./images/jpg/Rectangle 55.jpg" alt=""></div>
-                        <div class="div2"><img src="./images/jpg/Rectangle 56.jpg" alt=""></div>
-                        <div class="div3"><img src="./images/jpg/Rectangle 57.jpg" alt=""></div>
-                        <div class="div4"><img src="./images/jpg/Rectangle 58.jpg" alt=""></div>
-                        <div class="div5"><img src="./images/jpg/Rectangle 59.jpg" alt=""></div>
-                        <div class="div6"><img src="./images/jpg/Rectangle 60.jpg" alt=""></div>
-                        <div class="div7"><img src="./images/jpg/Rectangle 61.jpg" alt=""></div>
+                    <div class="parent1">
+                        <div class="div10 bosildi">
+                            <a href="https://source.unsplash.com/BQS56vYK_1E/1500x1000" data-fancybox="group"
+                                data-caption="">
+                                <img src="https://source.unsplash.com/BQS56vYK_1E/240x160" />
+                            </a>
+                        </div>
+                        <div class="div20 bosildi">
+                            <a href="https://source.unsplash.com/FcM1j7b8Gh0/1500x1000" data-fancybox="group"
+                                data-caption="This image has a caption 2">
+                                <img src="https://source.unsplash.com/FcM1j7b8Gh0/240x160" />
+                            </a>
+                        </div>
+                        <div class="div30 bosildi">
+                            <a href="https://source.unsplash.com/RUvW1KGD9a4/1500x1000" data-fancybox="group"
+                                data-caption="This image has a caption 3">
+                                <img src="https://source.unsplash.com/RUvW1KGD9a4/240x160" />
+                            </a>
+                        </div>
+                        <div class="div40 bosildi">
+                            <a href="https://source.unsplash.com/0uOA3XQmEmQ/1500x1000" data-fancybox="group"
+                                data-caption="This image has a caption 3">
+                                <img src="https://source.unsplash.com/0uOA3XQmEmQ/240x160" />
+                            </a>
+
+                        </div>
+                        <div class="div50 bosildi">
+                            <a href="https://source.unsplash.com/CCjAPxoQWgQ/1500x1000" data-fancybox="group"
+                                data-caption="Yotoqxona uchun">
+                                <img src="https://source.unsplash.com/CCjAPxoQWgQ" />
+                            </a>
+                        </div>
+                        <div class="div60 bosildi">
+                            <a href="https://source.unsplash.com/0sDzRgrN_pI/1500x1000" data-fancybox="group"
+                                data-caption="Yotoqxona uchun">
+                                <img src="https://source.unsplash.com/0sDzRgrN_pI" />
+                            </a>
+                        </div>
+                        <div class="div70 bosildi">
+                            <a href="https://source.unsplash.com/8wDnylxemkk/1500x1000" data-fancybox="group"
+                                data-caption="Oshxona uchun">
+                                <img src="https://source.unsplash.com/8wDnylxemkk" />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="assortment-bottom">
-                    <p class="bottom-text"><span>*</span> Butun assortiment ro’yxatini yuklab oling!</p>
+                    <p class="bottom-text" id=""><span>*</span> Butun assortiment ro’yxatini yuklab oling!</p>
                     <button id="assortment" class="site-btn">Yuklab olish</button>
                 </div>
             </div>
@@ -244,7 +309,8 @@
                 <div class="olcham-wrapper">
                     <div class="olcham-left">
                         <div class="olcham-left-t">
-                            <h3 class="title">Aynan qandaydur o’lcham bo’yicha istalgan mebelingizni yasattirmoqchimsiz?
+                            <h3 class="title">Aynan qandaydur o’lcham bo’yicha istalgan mebelingizni
+                                yasattirmoqchimsiz?
                             </h3>
                             <p class="text">Bizning mutaxassislar sizga <span>bepul</span> siz xoxlagan olchamda va
                                 materialda mebel narxini chiqarib berishadi</p>
@@ -253,13 +319,14 @@
                             <h2 class="sub-title">Mutaxassis orqali sizga kerakli mebel narxini <span>BEPUL</span>
                                 xisoblash uchun telefon raqamingizni qoldiring</h2>
                             <div class="olcham-input-wrapper">
-                                <form action="./index.html">
+                                <form action="./index.html" id="order-form">
                                     <label for="ism">Ismingiz</label>
                                     <input id="ism" type="text" placeholder="Palonchiyev Pistonchi" required>
                                     <label for="phone">Telefon raqamingiz</label>
                                     <input type="text" id="phone"
                                         onkeypress='return event.charCode >= 48 && event.charCode <= 57'
                                         pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="+998"></input>
+                                    <button type="submit" id="olcham" class="site-btn">Yuborish</button>
                                 </form>
                             </div>
                         </div>
@@ -271,8 +338,7 @@
                     </div>
 
                 </div>
-                <div class="b">
-                    <button id="olcham" class="site-btn">Yuborish</button>
+                <div class="b" id="order-msg">
                     <p><span>*</span> Konsultatsiya olish mutlaqo bepul bo’lib, sizdan hech qanday
                         to’lovni amalga
                         oshirish talab qilinmaydi!</p>
@@ -292,7 +358,8 @@
                                 <img src="./images/png/1.png" alt="">
                                 <div class="text-w">
                                     <h3 class="title">Muddatga amal qilish</h3>
-                                    <p class="text">Biz buyurtmani muddatida topshirishni eng muhim ish deb bilamiz!</p>
+                                    <p class="text">Biz buyurtmani muddatida topshirishni eng muhim ish deb bilamiz!
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -319,7 +386,8 @@
                                 <img src="./images/png/4.png" alt="">
                                 <div class="text-w">
                                     <h3 class="title">Mebelni professional darajada yeg’ish</h3>
-                                    <p class="text">Biz xar bir mebelni millimetrigacha xisoblab, professional darajada
+                                    <p class="text">Biz xar bir mebelni millimetrigacha xisoblab, professional
+                                        darajada
                                         yeg’ib ketamiz!</p>
                                 </div>
                             </div>
@@ -335,21 +403,22 @@
             <div class="container">
                 <div class="works-wrapper">
                     <div class="father">
-                        <div class="div1"><img src="./images/jpg/Rectangle 30.jpg" alt=""> </div>
-                        <div class="div2"> <img src="./images/jpg/Rectangle 31.jpg" alt=""></div>
-                        <div class="div3"><img src="./images/jpg/Rectangle 32.jpg" alt=""> </div>
-                        <div class="div4"> <img src="./images/jpg/Rectangle 42.jpg" alt=""></div>
-                        <div class="div5">
-                            <div class="center-wrapper">
-                                <h2 class="title">Biz qilgan ishlar</h2>
-                                <h3 class="sub-title">Narxlar katalogini yuklab oling!</h3>
-                                <button id="works" class="site-btn">Yuklab olish</button>
-                            </div>
+                        <div class="div1"><img src="./images/jpg/Rectangle 30.jpg" alt=""></div>
+                        <div class="div2"><img src="./images/jpg/Rectangle 31.jpg" alt=""></div>
+                        <div class="div3"><img src="./images/jpg/Rectangle 32.jpg" alt=""></div>
+                        <div class="div4"><img src="./images/jpg/Rectangle 42.jpg" alt=""></div>
+                        <div class="div5"><img src="./images/jpg/Rectangle 56.jpg" alt=""></div>
+                        <div class="div6"><img src="./images/jpg/Rectangle 39.jpg" alt=""></div>
+                        <div class="div7"><img src="./images/jpg/Rectangle 35.jpg" alt=""></div>
+                        <div class="div8"><img src="./images/jpg/Rectangle 40.jpg" alt=""></div>
+                        <div class="div9"><img src="./images/jpg/Rectangle 41.jpg" alt=""></div>
+                    </div>
+                    <div class="downland">
+                        <div class="center-wrapper">
+                            <h2 class="title">Biz qilgan ishlar</h2>
+                            <h3 class="sub-title">Narxlar katalogini yuklab oling!</h3>
+                            <button id="works" class="site-btn">Yuklab olish</button>
                         </div>
-                        <div class="div6"><img src="./images/jpg/Rectangle 39.jpg" alt=""> </div>
-                        <div class="div7"><img src="./images/jpg/Rectangle 35.jpg" alt=""> </div>
-                        <div class="div8"><img src="./images/jpg/Rectangle 40.jpg" alt=""> </div>
-                        <div class="div9"><img src="./images/jpg/Rectangle 41.jpg" alt=""> </div>
                     </div>
                 </div>
             </div>
@@ -377,7 +446,8 @@
                                             typesetting industry.
                                             Lorem Ipsum has been the industry's standard dummy text ever since the
                                             1500s, when an unknown printer took a galley of type and scrambled it to
-                                            make a type specimen book. It has survived not only five centuries, but also
+                                            make a type specimen book. It has survived not only five centuries, but
+                                            also
                                             the leap into electronic typesetting, remaining essentially unchanged .
                                             scrambled it to make a type specimen book. It has survived not only five
                                             centuries, but also the leap into electronic typesetting, remaining
@@ -395,9 +465,11 @@
                                         </div>
                                         <p class="bottom">Lorem Ipsum is simply dummy text of the printing and
                                             typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            text ever since the 1500s, when an unknown printer took a galley of type
+                                            and
                                             scrambled it to
-                                            make a type specimen book. It has survived not only five centuries, but also
+                                            make a type specimen book. It has survived not only five centuries, but
+                                            also
                                             the leap into electronic typesetting, remaining</p>
                                     </div>
                                 </div>
@@ -414,7 +486,8 @@
                                         </div>
                                         <p class="bottom">Lorem Ipsum is simply dummy text of the printing and
                                             typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            text ever since the 1500s, when an unknown printer took a galley of type
+                                            and
                                             scrambled it to make a type specimen book. It has survived not only five
                                             centuries, but also the leap into electronic typesetting, remaining</p>
                                     </div>
@@ -432,7 +505,8 @@
                                             typesetting industry.
                                             Lorem Ipsum has been the industry's standard dummy text ever since the
                                             1500s, when an unknown printer took a galley of type and scrambled it to
-                                            make a type specimen book. It has survived not only five centuries, but also
+                                            make a type specimen book. It has survived not only five centuries, but
+                                            also
                                             the leap into electronic typesetting, remaining essentially unchanged .
                                             scrambled it to make a type specimen book. It has survived not only five
                                             centuries, but also the leap into electronic typesetting, remaining
@@ -474,6 +548,16 @@
         <!-- <div class="hamkorlar">
             <div class="container">
                 <h2 class="hamkorlik-title">Bizning mijozlarimiz ichida</h2>
+                <div class="swiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/png/zonuz.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/png/agmk.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/png/trade.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/png/unodc.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="./images/png/zonuz.png" alt=""></div>
@@ -481,6 +565,10 @@
                         <div class="swiper-slide"><img src="./images/png/trade.png" alt=""></div>
                         <div class="swiper-slide"><img src="./images/png/unodc.png" alt=""></div>
                     </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
                 </div>
             </div>
         </div> -->
@@ -505,7 +593,12 @@
                         <button class="site-btn">Yuborish</button>
                     </form>
                     <div class="map-section">
-                        <div class="map"></div>
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1105.9942508502538!2d71.7812617697533!3d40.38293295875757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb83a4e74c1d51%3A0x74f191ca540db19!2siTeach%20Academy!5e0!3m2!1sen!2s!4v1685441390523!5m2!1sen!2s"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -516,7 +609,7 @@
     <footer class="footer">
         <div class="container">
             <nav class="footer-nav">
-                <div class="nav-left" data-aos="fade-down-right" data-aos-duration="700">
+                <div class="nav-left">
                     <div class="logo-w">
                         <a class="site-logo" href="index.html"><img src="./images/svg/Logo.svg" alt="site logo"></a>
                         <p class="link">Loyihalashtirildi <a href="#">I-Teach Programming</a></p>
@@ -529,7 +622,7 @@
                     </div>
                 </div>
 
-                <div class="nav-right" data-aos="fade-down-left" data-aos-duration="700">
+                <div class="nav-right">
 
                     <div class="work-t">
                         <h2 class="work-t-title">09:00 - 20:00</h2>
@@ -551,8 +644,11 @@
             </nav>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
 </body>

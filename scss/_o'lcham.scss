@@ -117,16 +117,19 @@
     display: flex;
     align-items: center;
     gap: 30px;
-
     font-family: $pr-font;
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
     color: #87abab;
+    margin-top: 20px;
     span {
       font-size: 20px;
       color: #f50000;
       line-height: 26px;
+    }
+    .submitted-msg{
+      color: #0DB709;
     }
   }
 }

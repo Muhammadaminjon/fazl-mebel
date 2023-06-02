@@ -1,14 +1,16 @@
 AOS.init();
-// const drop = document.querySelector(".dropdown");
-// const lang = document.querySelector(".lang");
-// const text = document.querySelector(".lang-text");
-// drop.addEventListener("click", () => {
-//   text.classList.toggle("active");
-// });
+const drop = document.querySelector(".dropdown");
+const lang = document.querySelector(".menu-lang");
+const text = document.querySelector(".lang");
+const modal = document.querySelector(".assortment-modal");
+const dark = document.querySelector(".dark");
+drop.addEventListener("click", () => {
+  lang.classList.toggle("active");
+});
 
-// text.addEventListener("click", () => {
-//   lang.classList.remove("active");
-// });
+text.addEventListener("click", () => {
+  text.classList.remove("active");
+});
 
 // modal
 const heroBtn = document.getElementById("hero-btn");
@@ -17,6 +19,7 @@ const heromodal = document.querySelector(".hero-modal");
 const about = document.querySelector("#about");
 const assortment = document.querySelector("#assortment");
 const works = document.querySelector("#works");
+const click = document.querySelectorAll(".parent1");
 
 heroBtn.addEventListener("click", () => {
   grey.style.display = "block";
@@ -38,59 +41,101 @@ grey.addEventListener("click", () => {
   grey.style.display = "none";
   heromodal.classList.remove("active");
 });
-// assortment
-const all = document.querySelector(".all");
-const mebel = document.querySelector(".mebel");
-const ofic = document.querySelector(".ofic");
-const ckock = document.querySelector(".ckock");
-const kop = document.querySelector(".kop");
-const lox = document.querySelector(".lox");
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+// inputs
+const inputs = document.querySelectorAll("input");
+inputs.forEach((inp) => {
+  inp.oninvalid = function (e) {
+    e.target.setCustomValidity("");
+    if (inp.attributes.getNamedItem("data-tel")) {
+      if (e.target.validity.patternMismatch) {
+        e.target.setCustomValidity("Telefon raqami to'liq kiritilishi kerak!");
+      }
+    } else {
+      if (!e.target.validity.valid) {
+        e.target.setCustomValidity("Ism kiritilishi kerak!");
+      }
+    }
+  };
+  inp.oninput = function (e) {
+    e.target.setCustomValidity("");
+  };
+});
 
-all.addEventListener("click", () => {
-  all.classList.toggle("filteractive");
-  mebel.classList.remove("filteractive");
-  ofic.classList.remove("filteractive");
-  ckock.classList.remove("filteractive");
-  kop.classList.remove("filteractive");
-  lox.classList.remove("filteractive");
+//form
+const orderForm = document.getElementById("order-form");
+const submittedMsg = `<p class='submitted-msg'><i class="fas fa-check"></i> Muvaffaqiyatli yuborildi! Mutaxassis tez orada siz bilan aloqaga chiqadi</p>`;
+orderForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  document.getElementById("order-msg").innerHTML = submittedMsg;
 });
-mebel.addEventListener("click", () => {
-  mebel.classList.toggle("filteractive");
-  all.classList.remove("filteractive");
-  ofic.classList.remove("filteractive");
-  ckock.classList.remove("filteractive");
-  kop.classList.remove("filteractive");
-  lox.classList.remove("filteractive");
+
+// ---------Responsive-navbar-active-animation-----------
+function test() {
+  var tabsNewAnim = $("#navbarSupportedContent");
+  var selectorNewAnim = $("#navbarSupportedContent").find("li").length;
+  var activeItemNewAnim = tabsNewAnim.find(".active");
+  var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+  var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+  var itemPosNewAnimTop = activeItemNewAnim.position();
+  var itemPosNewAnimLeft = activeItemNewAnim.position();
+  $(".hori-selector").css({
+    top: itemPosNewAnimTop.top + "px",
+    left: itemPosNewAnimLeft.left + "px",
+    height: activeWidthNewAnimHeight + "px",
+    width: activeWidthNewAnimWidth + "px",
+  });
+  $("#navbarSupportedContent").on("click", "li", function (e) {
+    $("#navbarSupportedContent ul li").removeClass("active");
+    $(this).addClass("active");
+    var activeWidthNewAnimHeight = $(this).innerHeight();
+    var activeWidthNewAnimWidth = $(this).innerWidth();
+    var itemPosNewAnimTop = $(this).position();
+    var itemPosNewAnimLeft = $(this).position();
+    $(".hori-selector").css({
+      top: itemPosNewAnimTop.top + "px",
+      left: itemPosNewAnimLeft.left + "px",
+      height: activeWidthNewAnimHeight + "px",
+      width: activeWidthNewAnimWidth + "px",
+    });
+  });
+}
+$(document).ready(function () {
+  setTimeout(function () {
+    test();
+  });
 });
-ofic.addEventListener("click", () => {
-  ofic.classList.toggle("filteractive");
-  mebel.classList.remove("filteractive");
-  all.classList.remove("filteractive");
-  ckock.classList.remove("filteractive");
-  kop.classList.remove("filteractive");
-  lox.classList.remove("filteractive");
+$(window).on("resize", function () {
+  setTimeout(function () {
+    test();
+  }, 500);
 });
-ckock.addEventListener("click", () => {
-  ckock.classList.toggle("filteractive");
-  mebel.classList.remove("filteractive");
-  ofic.classList.remove("filteractive");
-  all.classList.remove("filteractive");
-  kop.classList.remove("filteractive");
-  lox.classList.remove("filteractive");
+$(".navbar-toggler").click(function () {
+  $(".navbar-collapse").slideToggle(300);
+  setTimeout(function () {
+    test();
+  });
 });
-kop.addEventListener("click", () => {
-  kop.classList.toggle("filteractive");
-  mebel.classList.remove("filteractive");
-  ofic.classList.remove("filteractive");
-  ckock.classList.remove("filteractive");
-  all.classList.remove("filteractive");
-  lox.classList.remove("filteractive");
-});
-lox.addEventListener("click", () => {
-  lox.classList.toggle("filteractive");
-  mebel.classList.remove("filteractive");
-  ofic.classList.remove("filteractive");
-  ckock.classList.remove("filteractive");
-  kop.classList.remove("filteractive");
-  all.classList.remove("filteractive");
+
+// --------------add active class-on another-page move----------
+jQuery(document).ready(function ($) {
+  // Get current path and find target link
+  var path = window.location.pathname.split("/").pop();
+
+  // Account for home page with empty path
+  if (path == "") {
+    path = "index.html";
+  }
+
+  var target = $('#navbarSupportedContent ul li a[href="' + path + '"]');
+  // Add active class to target link
+  target.parent().addClass("active");
 });

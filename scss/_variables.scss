@@ -12,7 +12,7 @@ $sc-font: "Montserrat";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // text-decoration: none;
+  text-decoration: none;
   list-style: none;
   transition: all 0.3s ease;
 }
@@ -40,6 +40,7 @@ button {
 a {
   text-decoration: none !important;
   margin: 0;
+  color: inherit;
 }
 h1 {
   margin: 0;
@@ -54,6 +55,8 @@ h3 {
   margin: 0;
 }
 img {
+  width: 100%;
+  height: auto;
   object-position: center;
   object-fit: cover;
 }

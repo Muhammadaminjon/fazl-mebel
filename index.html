@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header style="display: none;" class="header">
         <div class="container">
             <nav class="header-nav">
                 <div data-aos="fade-down-right" data-aos-duration="700" class="nav-left">
@@ -70,16 +70,16 @@
     </header>
 
     <main class="main">
+
         <!-- hero section -->
-        <div class="hero-section">
+        <div style="display: none;" class="hero-section">
             <div class="container">
                 <div class="hero-wrapper">
-                    <div data-aos="flip-left" class="wrapper-left">
+                    <div class="wrapper-left" data-aos="flip-left">
                         <div class="left-top">
                             <h2 class="left-title">Uyingiz uchun antiqa mebellar</h2>
                             <p class="left-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the </p>
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
                             <button id="hero-btn" class="site-btn">Buyurtma berish</button>
                         </div>
                         <div class="left-bottom">
@@ -97,14 +97,14 @@
                             </div>
                         </div>
                     </div>
-                    <div data-aos="flip-right" class="wrapper-right">
+                    <div class="wrapper-right" data-aos="flip-right">
                         <div class="right-images">
                             <img class="r-img" src="./images/png/hero-right-img.png" alt="chair and lamp">
                         </div>
                     </div>
                 </div>
                 <div class="wrapper-bottom">
-                    <div data-aos="zoom-in" class="wrapper-bottom-cart">
+                    <div class="wrapper-bottom-cart">
                         <div class="bottom-cart-img">
                             <img src="./images/svg/track.svg" alt="track icon">
                         </div>
@@ -115,7 +115,7 @@
                         </div>
                     </div>
 
-                    <div data-aos="zoom-in" class="wrapper-bottom-cart">
+                    <div class="wrapper-bottom-cart">
 
                         <div class="bottom-cart-img">
                             <img src="./images/svg/star.svg" alt="star icon">
@@ -128,7 +128,7 @@
 
                     </div>
 
-                    <div data-aos="zoom-in" class="wrapper-bottom-cart">
+                    <div class="wrapper-bottom-cart">
                         <div class="bottom-cart-img">
                             <img src="./images/svg/cyber.svg" alt="cyber icon">
                         </div>
@@ -155,23 +155,11 @@
                     </form>
                 </div>
             </div>
-            <!-- <div class="hero-modal">
-                <div class="hero-modal-wrapper">
-                    <h2 class="modal-title">Buyurtma berish</h2>
-                    <form action="./index.html">
-                        <label for="ism">Ismingiz?</label>
-                        <input id="ism" type="text" placeholder="Palonchiyev Pistonchi">
-                        <label for="ism">Telefon raqamingiz</label>
-                        <input id="ism" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                        <button type="submit" class="site-btn">Yuborish</button>
-                    </form>
-                </div>
-            </div> -->
         </div>
         <!-- hero section end -->
 
         <!-- About section -->
-        <div class="about-section">
+        <div style="display: none;" class="about-section">
             <div class="container">
                 <div class="about-wrapper">
                     <div class="left-wrapper">
@@ -207,7 +195,7 @@
         <!-- About section end -->
 
         <!-- Assortment -->
-        <div class="assortment">
+        <div style="display: none;" class="assortment">
             <div class="container">
                 <nav class="navbar navbar-expand-custom navbar-mainbg">
                     <a class="navbar-brand navbar-logo" href="#">Assortiment</a>
@@ -304,7 +292,7 @@
         <!-- Assortment end -->
 
         <!-- O'lcham -->
-        <div class="olcham">
+        <div style="display: none;" class="olcham">
             <div class="container">
                 <div class="olcham-wrapper">
                     <div class="olcham-left">
@@ -332,11 +320,8 @@
                         </div>
                     </div>
                     <div class="olcham-right">
-                        <div class="olcham-img-wrapper">
-                            <img src="./images/jpg/olcham.jpg" alt="olcham rasm">
-                        </div>
+                        <img src="./images/jpg/olcham.jpg" alt="olcham rasm">
                     </div>
-
                 </div>
                 <div class="b" id="order-msg">
                     <p><span>*</span> Konsultatsiya olish mutlaqo bepul bo’lib, sizdan hech qanday
@@ -348,7 +333,7 @@
         <!-- O'lcham end -->
 
         <!-- choose -->
-        <div class="choose">
+        <div style="display: none;" class="choose">
             <div class="container">
                 <div class="choose-wrapper">
                     <h2 class="title">Nima uchun mijozlar aynan bizni tanlashadi?</h2>
@@ -399,34 +384,67 @@
         <!-- choose end -->
 
         <!-- works -->
-        <div class="works">
+        <div style="display: none;" class="works">
             <div class="container">
                 <div class="works-wrapper">
                     <div class="father">
-                        <div class="div1"><img src="./images/jpg/Rectangle 30.jpg" alt=""></div>
-                        <div class="div2"><img src="./images/jpg/Rectangle 31.jpg" alt=""></div>
-                        <div class="div3"><img src="./images/jpg/Rectangle 32.jpg" alt=""></div>
-                        <div class="div4"><img src="./images/jpg/Rectangle 42.jpg" alt=""></div>
-                        <div class="div5"><img src="./images/jpg/Rectangle 56.jpg" alt=""></div>
-                        <div class="div6"><img src="./images/jpg/Rectangle 39.jpg" alt=""></div>
-                        <div class="div7"><img src="./images/jpg/Rectangle 35.jpg" alt=""></div>
-                        <div class="div8"><img src="./images/jpg/Rectangle 40.jpg" alt=""></div>
-                        <div class="div9"><img src="./images/jpg/Rectangle 41.jpg" alt=""></div>
+                        <div data-bs-toggle="modal" href="#exampleModalToggle" class="div1">
+                            <img src="./images/jpg/Rectangle 30.jpg" alt="">
+                        </div>
+                        <div data-bs-toggle="modal" href="#exampleModalToggle" class="div2">
+                            <img src="./images/jpg/Rectangle 31.jpg" alt="">
+                        </div>
+                        <div data-bs-toggle="modal" href="#exampleModalToggle" class="div3">
+                            <img src="./images/jpg/Rectangle 32.jpg" alt="">
+                        </div>
+                        <div data-bs-toggle="modal" href="#exampleModalToggle" class="div4">
+                            <img src="./images/jpg/Rectangle 42.jpg" alt="">
+                        </div>
+                        <div data-bs-toggle="modal" href="#exampleModalToggle" class="div5">
+                            <img src="./images/jpg/Rectangle 56.jpg" alt="">
+                        </div>
+                        <div data-bs-toggle="modal" href="#exampleModalToggle" class="div6">
+                            <img src="./images/jpg/Rectangle 39.jpg" alt="">
+                        </div>
+                        <div data-bs-toggle="modal" href="#exampleModalToggle" class="div7">
+                            <img src="./images/jpg/Rectangle 35.jpg" alt="">
+                        </div>
+                        <div data-bs-toggle="modal" href="#exampleModalToggle" class="div8">
+                            <img src="./images/jpg/Rectangle 40.jpg" alt="">
+                        </div>
+                        <div data-bs-toggle="modal" href="#exampleModalToggle" class="div9">
+                            <img src="./images/jpg/Rectangle 41.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="downland">
-                        <div class="center-wrapper">
-                            <h2 class="title">Biz qilgan ishlar</h2>
-                            <h3 class="sub-title">Narxlar katalogini yuklab oling!</h3>
-                            <button id="works" class="site-btn">Yuklab olish</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class=" downland">
+                            <div class="center-wrapper">
+                                <h2 class="title">Biz qilgan ishlar</h2>
+                                <h3 class="sub-title">Narxlar katalogini yuklab oling!</h3>
+                                <div class="" data-bs-dismiss="modal" aria-label="Close">
+                                    <a href="./images/jpg/Rectangle 35.jpg" id="works" class="site-btn" download>
+                                        Yuklab
+                                        olish</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- works end -->
 
         <!-- comment -->
-        <div class="comments">
+        <div style="display: none;" class="comments">
             <div class="container">
                 <div class="comments-wrappers">
                     <div class="comment-wrapper">
@@ -522,10 +540,10 @@
         <!-- comment end -->
 
         <!-- meeting -->
-        <div class="meeting">
+        <div style="display: none;" class="meeting">
             <div class="container">
                 <div class="meeting-wrapper">
-                    <h2 class="title">Mebel borasida bepul maslahat olish:</h2>
+                    <h2 class="title2">Mebel borasida bepul maslahat olish:</h2>
                     <form action="./index.html">
                         <div class="name-w">
                             <label for="ism">Ismingiz</label>
@@ -545,37 +563,30 @@
         <!-- meeting end -->
 
         <!-- hamkorlar -->
-        <!-- <div class="hamkorlar">
-            <div class="container">
+        <div class="hamkorlar">
+            <div class="container con-2">
                 <h2 class="hamkorlik-title">Bizning mijozlarimiz ichida</h2>
-                <div class="swiper3">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./images/png/zonuz.png" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/png/agmk.png" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/png/trade.png" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/png/unodc.png" alt=""></div>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
                 <div class="swiper">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="./images/png/zonuz.png" alt=""></div>
                         <div class="swiper-slide"><img src="./images/png/agmk.png" alt=""></div>
                         <div class="swiper-slide"><img src="./images/png/trade.png" alt=""></div>
                         <div class="swiper-slide"><img src="./images/png/unodc.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/png/zonuz.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/png/agmk.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/png/trade.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/png/unodc.png" alt=""></div>
                     </div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
 
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- hamkorlar end -->
 
         <!-- quetion -->
-        <div class="quetion">
+        <div style="display: none;" class="quetion">
             <div class="container">
                 <div class="quetion-wrapper">
                     <form action="?">
@@ -604,9 +615,10 @@
             </div>
         </div>
         <!-- quetion end -->
+
     </main>
 
-    <footer class="footer">
+    <footer style="display: none;" class="footer">
         <div class="container">
             <nav class="footer-nav">
                 <div class="nav-left">
@@ -644,6 +656,7 @@
             </nav>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

@@ -1,22 +1,35 @@
 .olcham {
   width: 100%;
   margin: 80px 0px;
-  .container {}
+  @include media(800px) {
+    margin: 60px 0;
+  }
   &-wrapper {
     width: 100%;
-    padding: 0 0 0 50px;
+    padding: 0 50px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    @include media(1150px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0;
+    }
     .olcham-left {
       width: 100%;
       max-width: 541px;
       display: flex;
       flex-direction: column;
+      @include media(1150px) {
+        max-width: 100%;
+        margin-top: 70px;
+      }
       .olcham-left-t {
         width: 100%;
-        max-width: 541px;
         margin-bottom: 41px;
+        @include media(650px){
+          margin-bottom: 30px;
+        }
         .title {
           font-family: $pr-font;
           font-weight: 600;
@@ -24,14 +37,23 @@
           line-height: 53px;
           color: #231202;
           margin-bottom: 20px;
+          @include media(650px) {
+            width: 341px;
+            font-size: 24px;
+            line-height: 34px;
+          }
         }
         .text {
-          max-width: 393px;
+          max-width: 336px;
           font-family: $pr-font;
           font-weight: 400;
           font-size: 18px;
           line-height: 25px;
           color: #312922;
+          @include media(650px){
+            font-size: 16px;
+            line-height: 22px;
+          }
           span {
             font-weight: 700;
             border: 1px dashed #987452;
@@ -52,6 +74,10 @@
           line-height: 28px;
           color: #231202;
           margin-bottom: 20px;
+          @include media(650px){
+            font-size: 18px;
+            line-height: 25px;
+          }
           span {
             font-weight: 700;
             color: #987452;
@@ -94,20 +120,35 @@
       }
     }
     .olcham-right {
-      width: 534px;
-      height: 524px;
-      border: 3px solid #a49384;
-      border-radius: 12px;
-      .olcham-img-wrapper {
-        position: relative;
-        img {
-          position: absolute;
-          top: -50px;
-          right: 50px;
-          width: 596px;
-          height: 515px;
-          border-radius: 12px;
+      width: 600px;
+      position: relative;
+      @include media(700px) {
+        width: 400px;
+      }
+      @include media(650px) {
+        width: 322px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #a49384;
+        border-radius: 12px;
+        z-index: 2;
+        @include media(650px) {
+          right: -25px;
+          bottom: -25px;
         }
+      }
+      img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 3;
+        border-radius: 12px;
       }
     }
   }
@@ -125,11 +166,16 @@
     margin-top: 20px;
     span {
       font-size: 20px;
+      line-height: 30px;
       color: #f50000;
-      line-height: 26px;
     }
-    .submitted-msg{
-      color: #0DB709;
+    .submitted-msg {
+      color: #0db709;
+    }
+    @include media(650px) {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 0;
     }
   }
 }

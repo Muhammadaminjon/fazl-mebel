@@ -1,41 +1,54 @@
 .comments {
   width: 100%;
   background: #fff8f2;
-  padding: 40px 0;
-  .container {
-  }
+  padding-top: 40px;
+
   &-wrappers {
     .comment-wrapper {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       .title {
-        text-align: left;
         font-family: $pr-font;
         font-weight: 600;
         font-size: 38px;
         line-height: 53px;
         color: #231202;
+        @include media(650px) {
+          font-size: 24px;
+          line-height: 33px;
+        }
       }
       .granfather {
         display: flex;
         flex-direction: column;
         gap: 20px;
         padding: 40px 0;
-
+        @include media(700px) {
+          padding: 24px 0;
+        }
         .father {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           gap: 20px;
+          @include media(1200px) {
+            flex-direction: column;
+            width: 100%;
+          }
           .mijoz1 {
             width: 100%;
             max-width: 692px;
-            height: 337px;
+            height: auto;
             padding: 24px;
             background: #ffffff;
             border: 0.5px solid #a49384;
             border-radius: 12px;
+            overflow: hidden;
+            @include media(1200px) {
+              max-width: 100%;
+              height: auto;
+            }
             .mijoz-wrapper {
               .top {
                 display: flex;
@@ -47,6 +60,10 @@
                   width: 79px;
                   height: 79px;
                   border-radius: 50%;
+                  @include media(650px) {
+                    width: 49px;
+                    height: 49px;
+                  }
                 }
                 .top-text {
                   width: 100%;
@@ -57,6 +74,11 @@
                     line-height: 32px;
                     color: #3f3933;
                     margin-bottom: 5px;
+                    @include media(650px) {
+                      font-size: 18px;
+                      line-height: 25px;
+                      margin-bottom: 8px;
+                    }
                   }
                   .name {
                     display: flex;
@@ -75,6 +97,14 @@
                       line-height: 22px;
                       color: #9e9a95;
                     }
+                    @include media(650px) {
+                      font-size: 14px;
+                      line-height: 19px;
+                      span {
+                        font-size: 12px;
+                        line-height: 16px;
+                      }
+                    }
                   }
                 }
               }
@@ -84,17 +114,25 @@
                 font-size: 18px;
                 line-height: 27px;
                 color: #223838;
+                @include media(650px) {
+                  font-size: 14px;
+                  line-height: 21px;
+                }
               }
             }
           }
           .mijoz2 {
             width: 100%;
             max-width: 488px;
-            height: 337px;
+            height: auto;
             padding: 24px;
             background: #ffffff;
             border: 0.5px solid #a49384;
             border-radius: 12px;
+            @include media(1200px) {
+              max-width: 100%;
+              height: auto;
+            }
             .mijoz-wrapper {
               .top {
                 display: flex;
@@ -106,6 +144,10 @@
                   width: 79px;
                   height: 79px;
                   border-radius: 50%;
+                  @include media(650px) {
+                    width: 49px;
+                    height: 49px;
+                  }
                 }
                 .top-text {
                   width: 100%;
@@ -116,6 +158,11 @@
                     line-height: 32px;
                     color: #3f3933;
                     margin-bottom: 5px;
+                    @include media(650px) {
+                      font-size: 18px;
+                      line-height: 25px;
+                      margin-bottom: 8px;
+                    }
                   }
                   .name {
                     display: flex;
@@ -134,6 +181,14 @@
                       line-height: 22px;
                       color: #9e9a95;
                     }
+                    @include media(650px) {
+                      font-size: 14px;
+                      line-height: 19px;
+                      span {
+                        font-size: 12px;
+                        line-height: 16px;
+                      }
+                    }
                   }
                 }
               }
@@ -143,6 +198,10 @@
                 font-size: 18px;
                 line-height: 27px;
                 color: #223838;
+                @include media(650px) {
+                  font-size: 14px;
+                  line-height: 21px;
+                }
               }
             }
           }

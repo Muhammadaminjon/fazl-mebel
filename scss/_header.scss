@@ -45,7 +45,7 @@
         }
         @include media(550px) {
           width: 100px;
-          height: 40px;
+          height: auto;
         }
         @include media(400px) {
           width: 87px;

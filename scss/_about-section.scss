@@ -6,6 +6,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @include media(1250px) {
+      flex-direction: column;
+      gap: 100px;
+    }
     .left-wrapper {
       position: relative;
       width: 100%;
@@ -16,14 +20,53 @@
       justify-content: center;
       border: 3px solid #a49384;
       border-radius: 12px;
+      @include media(900px) {
+        max-width: 449px;
+        height: 397px;
+      }
+      @include media(700px) {
+        max-width: 349px;
+        height: 297px;
+      }
+      @include media(550px) {
+        max-width: 314px;
+        height: 232px;
+      }
       .video-frame {
+        width: 100%;
         position: absolute;
         top: -30px;
         left: 50px;
         iframe {
           width: 728px;
           height: 497px;
+          object-fit: cover;
+          object-position: center;
           border-radius: 12px;
+        }
+        @include media(900px) {
+          top: -23px;
+          left: 19px;
+          iframe {
+            width: 628px;
+            height: 397px;
+          }
+        }
+        @include media(700px) {
+          top: -23px;
+          left: 19px;
+          iframe {
+            width: 428px;
+            height: 297px;
+          }
+        }
+        @include media(550px) {
+          top: -20px;
+          left: 15px;
+          iframe {
+            width: 326px;
+            height: 222px;
+          }
         }
       }
       .text-frame {
@@ -36,12 +79,31 @@
         justify-content: center;
         gap: 20px;
         background: #ffffff;
+        @include media(900px) {
+          width: 85%;
+          height: 30px;
+          align-items: start;
+        }
+        @include media(550px) {
+          width: 255px;
+          bottom: -24px;
+        }
         .text {
           font-family: $pr-font;
           font-weight: 600;
           font-size: 14px;
           line-height: 21px;
           color: #aaa7a4;
+          width: max-content;
+          @include media(900px) {
+            font-size: 12px;
+            line-height: 18px;
+          }
+          @include media(550px) {
+            width: 114px;
+            font-size: 12px;
+            line-height: 18px;
+          }
         }
       }
     }
@@ -56,6 +118,11 @@
         line-height: 49px;
         color: #231202;
         margin-bottom: 20px;
+        @include media(600px) {
+          font-size: 24px;
+          line-height: 31px;
+          margin-bottom: 18px;
+        }
       }
       .r-text {
         font-family: $pr-font;
@@ -64,6 +131,11 @@
         line-height: 27px;
         color: #312922;
         margin-bottom: 68px;
+        @include media(600px) {
+          margin-bottom: 28px;
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
       .r-form {
         &-title {
@@ -74,6 +146,11 @@
           line-height: 150%;
           color: #231202;
           padding-bottom: 20px;
+          @include media(600px) {
+            font-size: 18px;
+            line-height: 27px;
+            padding-bottom: 18px;
+          }
         }
         label {
           font-family: $pr-font;
@@ -83,6 +160,11 @@
           line-height: 150%;
           color: #746f6b;
           padding-bottom: 12px;
+          @include media(600px) {
+            padding-bottom: 10px;
+            font-size: 16px;
+            line-height: 24px;
+          }
         }
         input {
           width: 100%;
@@ -101,6 +183,9 @@
             font-size: 18px;
             line-height: 150%;
             color: #000;
+          }
+          @include media(600px) {
+            margin-bottom: 24px;
           }
         }
       }

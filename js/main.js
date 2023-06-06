@@ -49,6 +49,22 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
 });
 // inputs
 const inputs = document.querySelectorAll("input");

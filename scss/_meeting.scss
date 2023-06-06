@@ -9,7 +9,18 @@
     display: flex;
     align-items: end;
     justify-content: space-between;
-    .title {
+    @include media(1300px) {
+      margin: 0;
+    }
+    @include media(1000px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include media(650px) {
+      align-items: start;
+    }
+    .title2 {
+      width: max-content;
       font-family: $pr-font;
       font-weight: 600;
       font-size: 18px;
@@ -22,6 +33,13 @@
       align-items: end;
       justify-content: center;
       gap: 36px;
+      @include media(1300px) {
+        gap: 25px;
+      }
+      @include media(1000px) {
+        flex-direction: column;
+        align-items: start;
+      }
       .name-w {
         width: 100%;
         display: flex;
@@ -29,10 +47,13 @@
         gap: 12px;
         label {
           font-family: $pr-font;
-          font-weight: 400;
+          font-weight: 500;
           font-size: 18px;
           line-height: 27px;
           color: #523d2b;
+          @include media(650px) {
+            font-weight: 400;
+          }
         }
         input {
           width: 100%;

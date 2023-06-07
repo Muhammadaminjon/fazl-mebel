@@ -1,5 +1,11 @@
 .hamkorlar {
   padding: 80px 0;
+  .hamkorlik-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+  }
   .hamkorlik-title {
     font-family: $pr-font;
     font-weight: 600;
@@ -13,24 +19,60 @@
     }
   }
 
-  .swiper-button-prev{
+  .button-prev {
+    position: absolute;
     left: -20px;
+    top: 55%;
     width: 45px;
     height: 45px;
     border-radius: 50%;
     background: #987452;
-    ::after{
-        content: '';
-        width: 24px;
-        height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    rotate: 180deg;
+    z-index: 10;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    @include media(650px) {
+      left: -13px;
+      top: 60%;
+      width: 28px;
+      height: 28px;
+      img {
+        width: 15px;
+        height: 15px;
+      }
     }
   }
-  .swiper-button-next{
+  .button-next {
+    position: absolute;
     right: -20px;
+    top: 55%;
     width: 45px;
     height: 45px;
     border-radius: 50%;
     background: #987452;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    @include media(650px) {
+      right: -13px;
+      top: 60%;
+      width: 28px;
+      height: 28px;
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
   }
   .swiper {
     &-wrapper {

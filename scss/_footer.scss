@@ -7,17 +7,31 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include media(950px) {
+      padding: 24px 0px 60px;
+      flex-direction: column;
+      gap: 24px;
+    }
     .nav-left {
       width: 100%;
-      max-width: 600px;
+      max-width: 450px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @include media(650px){
+        flex-direction: column;
+        gap: 18px;
+      }
+
       .site-logo {
         display: flex;
         width: 103.52px;
         height: 35px;
         margin-bottom: 22px;
+        @include media(650px){
+          margin: 0 auto;
+          margin-bottom: 18px;
+        }
       }
       .link {
         font-family: $pr-font;
@@ -86,9 +100,15 @@
     .nav-right {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 30px;
       @include media(1200px) {
         gap: 28px;
+      }
+      @include media(950px) {
+        width: 100%;
+        justify-content: space-around;
+        gap: 20px;
       }
       @include media(400px) {
         gap: 26px;
@@ -107,6 +127,11 @@
             font-weight: 600;
             font-size: 26px;
             line-height: 40px;
+          }
+          @include media(1100px) {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 35px;
           }
           @include media(400px) {
             font-weight: 600;
@@ -139,6 +164,16 @@
               line-height: 25px;
             }
           }
+          @include media(1100px) {
+            .clock {
+              width: 20px;
+              height: 20px;
+            }
+            .text {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
           @include media(400px) {
             gap: 8px;
             .clock {
@@ -165,6 +200,11 @@
           @include media(1200px) {
             font-size: 26px;
             line-height: 40px;
+          }
+          @include media(1100px) {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 35px;
           }
           @include media(400px) {
             font-weight: 600;
@@ -195,6 +235,16 @@
             &-text {
               font-size: 16px;
               line-height: 25px;
+            }
+          }
+          @include media(1100px) {
+            &-img {
+              width: 20px;
+              height: 20px;
+            }
+            &-text {
+              font-size: 14px;
+              line-height: 20px;
             }
           }
           @include media(400px) {

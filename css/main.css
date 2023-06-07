@@ -2613,6 +2613,12 @@ li {
 .hamkorlar {
   padding: 80px 0;
 }
+.hamkorlar .hamkorlik-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
 .hamkorlar .hamkorlik-title {
   font-family: "Raleway";
   font-weight: 600;
@@ -2627,24 +2633,76 @@ li {
     line-height: 32px;
   }
 }
-.hamkorlar .swiper-button-prev {
+.hamkorlar .button-prev {
+  position: absolute;
   left: -20px;
+  top: 55%;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background: #987452;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  rotate: 180deg;
+  z-index: 10;
 }
-.hamkorlar .swiper-button-prev ::after {
-  content: "";
+.hamkorlar .button-prev img {
   width: 24px;
   height: 24px;
 }
-.hamkorlar .swiper-button-next {
+@media (max-width: 650px) {
+  .hamkorlar .button-prev {
+    left: -13px;
+    top: 60%;
+    width: 28px;
+    height: 28px;
+  }
+  .hamkorlar .button-prev img {
+    width: 15px;
+    height: 15px;
+  }
+}
+.hamkorlar .button-next {
+  position: absolute;
   right: -20px;
+  top: 55%;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background: #987452;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+}
+.hamkorlar .button-next img {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 650px) {
+  .hamkorlar .button-next {
+    right: -13px;
+    top: 60%;
+    width: 28px;
+    height: 28px;
+  }
+  .hamkorlar .button-next img {
+    width: 15px;
+    height: 15px;
+  }
 }
 .hamkorlar .swiper-wrapper .swiper-slide img {
   width: 100%;
@@ -2659,18 +2717,55 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 0 0 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+@media (max-width: 1050px) {
+  .quetion-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
 }
 .quetion-wrapper form {
   width: 100%;
   max-width: 409px;
   margin-bottom: 49px;
+}
+@media (max-width: 1050px) {
+  .quetion-wrapper form {
+    max-width: 100%;
+  }
+  .quetion-wrapper form .in-wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .quetion-wrapper form .in-wrap .wrap {
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  .quetion-wrapper form .in-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .quetion-wrapper form .in-wrap .wrap {
+    width: 100%;
+  }
 }
 .quetion-wrapper form .title {
   font-family: "Raleway";
@@ -2680,14 +2775,32 @@ li {
   color: #231202;
   margin-bottom: 20px;
 }
+@media (max-width: 1050px) {
+  .quetion-wrapper form .title {
+    margin-bottom: 15px;
+  }
+}
 .quetion-wrapper form .sub-title {
-  max-width: 363px;
+  width: 363px;
   font-family: "Raleway";
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: #312922;
   margin-bottom: 30px;
+}
+@media (max-width: 1050px) {
+  .quetion-wrapper form .sub-title {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .quetion-wrapper form .sub-title {
+    width: 290px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .quetion-wrapper form label {
   font-family: "Raleway";
@@ -2750,25 +2863,45 @@ li {
   color: #000;
 }
 .quetion-wrapper .map-section {
-  position: relative;
-  width: 534px;
-  height: 399px;
-  border: 3px solid #a49384;
-  border-radius: 12px;
+  width: 100%;
 }
 .quetion-wrapper .map-section .map {
-  position: absolute;
-  right: 57px;
-  bottom: 49px;
-  width: 741px;
+  position: relative;
+  max-width: 741px;
   height: 445px;
   border: 1px solid #c4c4c4;
   border-radius: 12px;
+}
+@media (max-width: 650px) {
+  .quetion-wrapper .map-section .map {
+    max-width: 500px;
+    height: 235px;
+  }
+}
+@media (max-width: 550px) {
+  .quetion-wrapper .map-section .map {
+    max-width: 324px;
+  }
+}
+.quetion-wrapper .map-section .map::after {
+  content: "";
+  position: absolute;
+  right: -8%;
+  bottom: -10%;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #a49384;
+  border-radius: 12px;
+  z-index: -1;
 }
 .quetion-wrapper .map-section .map iframe {
   width: 100%;
   height: 100%;
   border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .footer {
@@ -2788,9 +2921,19 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 950px) {
+  .footer-nav {
+    padding: 24px 0px 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+  }
+}
 .footer-nav .nav-left {
   width: 100%;
-  max-width: 600px;
+  max-width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2801,6 +2944,15 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 650px) {
+  .footer-nav .nav-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 18px;
+  }
+}
 .footer-nav .nav-left .site-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2808,6 +2960,12 @@ li {
   width: 103.52px;
   height: 35px;
   margin-bottom: 22px;
+}
+@media (max-width: 650px) {
+  .footer-nav .nav-left .site-logo {
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
 }
 .footer-nav .nav-left .link {
   font-family: "Raleway";
@@ -2889,11 +3047,22 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
 @media (max-width: 1200px) {
   .footer-nav .nav-right {
     gap: 28px;
+  }
+}
+@media (max-width: 950px) {
+  .footer-nav .nav-right {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 20px;
   }
 }
 @media (max-width: 400px) {
@@ -2918,6 +3087,13 @@ li {
     font-weight: 600;
     font-size: 26px;
     line-height: 40px;
+  }
+}
+@media (max-width: 1100px) {
+  .footer-nav .nav-right .work-t-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 35px;
   }
 }
 @media (max-width: 400px) {
@@ -2957,6 +3133,16 @@ li {
     line-height: 25px;
   }
 }
+@media (max-width: 1100px) {
+  .footer-nav .nav-right .work-t-img .clock {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-nav .nav-right .work-t-img .text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 @media (max-width: 400px) {
   .footer-nav .nav-right .work-t-img {
     gap: 8px;
@@ -2986,6 +3172,13 @@ li {
   .footer-nav .nav-right .call-n-title {
     font-size: 26px;
     line-height: 40px;
+  }
+}
+@media (max-width: 1100px) {
+  .footer-nav .nav-right .call-n-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 35px;
   }
 }
 @media (max-width: 400px) {
@@ -3023,6 +3216,16 @@ li {
   .footer-nav .nav-right .call-n-wrap-text {
     font-size: 16px;
     line-height: 25px;
+  }
+}
+@media (max-width: 1100px) {
+  .footer-nav .nav-right .call-n-wrap-img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-nav .nav-right .call-n-wrap-text {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 @media (max-width: 400px) {

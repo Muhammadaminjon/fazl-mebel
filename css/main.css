@@ -20,7 +20,6 @@ html {
       -ms-user-select: none;
           user-select: none;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -115,6 +114,99 @@ li {
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.grey {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(204, 176, 151, 0.5);
+}
+
+.hero-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  max-width: 469px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 50px 100px rgba(168, 135, 104, 0.2);
+          box-shadow: 0px 50px 100px rgba(168, 135, 104, 0.2);
+  border-radius: 12px;
+  opacity: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  z-index: 5;
+}
+.hero-modal.active {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.hero-modal-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+}
+.hero-modal-wrapper .modal-title {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #231202;
+}
+.hero-modal-wrapper form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.hero-modal-wrapper form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #746f6b;
+  margin-bottom: 12px;
+}
+.hero-modal-wrapper form input {
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  outline: #987452;
+  border: 1px solid #a8a39f;
+  border-radius: 12px;
+}
+.hero-modal-wrapper form button {
+  margin-top: 10px;
+}
+.hero-modal-wrapper form span {
+  margin-top: 10px;
+  font-size: 40px;
+  color: red;
 }
 
 .downland {
@@ -641,6 +733,7 @@ li {
   }
 }
 .hero-section .hero-wrapper .wrapper-left {
+  max-width: 488px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,7 +746,6 @@ li {
           flex-direction: column;
   padding-top: 104px;
   gap: 73px;
-  width: 488px;
 }
 @media (max-width: 1150px) {
   .hero-section .hero-wrapper .wrapper-left {
@@ -843,7 +935,8 @@ li {
   }
 }
 .hero-section .wrapper-bottom-cart {
-  width: 368px;
+  width: 100%;
+  max-width: 368px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -926,101 +1019,10 @@ li {
     line-height: 21px;
   }
 }
-.hero-section .grey {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  width: 100%;
-  height: 100%;
-  background: rgba(204, 176, 151, 0.5);
-}
-.hero-section .hero-modal {
-  position: fixed;
-  top: 30%;
-  left: 40%;
-  width: 100%;
-  max-width: 409px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 50px 100px rgba(168, 135, 104, 0.2);
-          box-shadow: 0px 50px 100px rgba(168, 135, 104, 0.2);
-  border-radius: 12px;
-  opacity: 0;
-  -webkit-transform: translate(-50% -50%);
-      -ms-transform: translate(-50% -50%);
-          transform: translate(-50% -50%);
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  z-index: 5;
-}
-.hero-section .hero-modal.active {
-  opacity: 1;
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-}
-.hero-section .hero-modal-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 30px;
-}
-.hero-section .hero-modal-wrapper .modal-title {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #231202;
-}
-.hero-section .hero-modal-wrapper form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.hero-section .hero-modal-wrapper form label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Raleway";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  color: #746f6b;
-  margin-bottom: 12px;
-}
-.hero-section .hero-modal-wrapper form input {
-  padding: 12px 18px;
-  margin-bottom: 20px;
-  outline: #987452;
-  border: 1px solid #a8a39f;
-  border-radius: 12px;
-}
-.hero-section .hero-modal-wrapper form button {
-  margin-top: 10px;
-}
-.hero-section .hero-modal-wrapper form span {
-  margin-top: 10px;
-  font-size: 40px;
-  color: red;
-}
 
 .about-section {
   padding: 80px 0;
+  overflow: hidden !important;
 }
 .about-section .about-wrapper {
   width: 100%;
@@ -1309,6 +1311,7 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow-x: hidden;
 }
 .assortment .navbar-mainbg {
   background-color: transparent;
@@ -1684,6 +1687,7 @@ li {
 .olcham {
   width: 100%;
   margin: 80px 0px;
+  overflow-x: hidden;
 }
 @media (max-width: 800px) {
   .olcham {
@@ -2495,6 +2499,7 @@ li {
   width: 100%;
   background: #f4cfaf;
   padding: 30px 0;
+  overflow-x: hidden;
 }
 .meeting-wrapper {
   margin: 0 50px;
@@ -2712,6 +2717,7 @@ li {
 .quetion {
   padding: 80px 0;
   width: 100%;
+  overflow-x: hidden;
 }
 .quetion-wrapper {
   display: -webkit-box;

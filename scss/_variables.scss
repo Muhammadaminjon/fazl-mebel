@@ -15,15 +15,10 @@ $sc-font: "Montserrat";
   list-style: none;
   transition: all 0.3s ease;
 }
-// *:focus {
-//   outline: 1px dashed black;
-//   outline-offset: 4px;
-// }
 html {
   height: 100%;
   user-select: none;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 body {
   height: 100%;
@@ -91,6 +86,76 @@ li {
   @include media(600px) {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+.grey {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #ccb097, $alpha: 0.5);
+}
+.hero-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  max-width: 469px;
+  background: #ffffff;
+  box-shadow: 0px 50px 100px rgba(168, 135, 104, 0.2);
+  border-radius: 12px;
+  opacity: 0;
+  transform: scale(0);
+  z-index: 5;
+  &.active {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    transform: scale(1);
+  }
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    .modal-title {
+      font-family: $sc-font;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      color: #231202;
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      label {
+        display: flex;
+        align-items: center;
+        font-family: $pr-font;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #746f6b;
+        margin-bottom: 12px;
+      }
+      input {
+        padding: 12px 18px;
+        margin-bottom: 20px;
+        outline: #987452;
+        border: 1px solid #a8a39f;
+        border-radius: 12px;
+      }
+      button {
+        margin-top: 10px;
+      }
+      span {
+        margin-top: 10px;
+        font-size: 40px;
+        color: red;
+      }
+    }
   }
 }
 .downland {

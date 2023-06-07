@@ -12,12 +12,12 @@
       flex-direction: column-reverse;
     }
     .wrapper-left {
+      max-width: 488px;
       display: flex;
       align-items: center;
       flex-direction: column;
       padding-top: 104px;
       gap: 73px;
-      width: 488px;
       @include media(1150px) {
         width: 100%;
         padding-top: 80px;
@@ -161,7 +161,8 @@
       justify-content: center;
     }
     &-cart {
-      width: 368px;
+      width: 100%;
+      max-width: 368px;
       display: flex;
       align-items: flex-start;
       justify-content: center;
@@ -214,77 +215,6 @@
             font-size: 14px;
             line-height: 21px;
           }
-        }
-      }
-    }
-  }
-
-  .grey {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: rgba($color: #ccb097, $alpha: 0.5);
-  }
-  .hero-modal {
-    position: fixed;
-    top: 30%;
-    left: 40%;
-    width: 100%;
-    max-width: 409px;
-    background: #ffffff;
-    box-shadow: 0px 50px 100px rgba(168, 135, 104, 0.2);
-    border-radius: 12px;
-    opacity: 0;
-    transform: translate(-50% -50%);
-    transform: scale(0);
-    z-index: 5;
-    &.active {
-      opacity: 1;
-      transition: 0.5s ease-in-out;
-      transform: scale(1);
-    }
-    &-wrapper {
-      display: flex;
-      flex-direction: column;
-      padding: 30px;
-      .modal-title {
-        font-family: $sc-font;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 30px;
-        color: #231202;
-      }
-      form {
-        //   width: 100%;
-        display: flex;
-        flex-direction: column;
-        label {
-          display: flex;
-          align-items: center;
-          font-family: $pr-font;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 27px;
-          color: #746f6b;
-          margin-bottom: 12px;
-        }
-        input {
-          padding: 12px 18px;
-          margin-bottom: 20px;
-          outline: #987452;
-          border: 1px solid #a8a39f;
-          border-radius: 12px;
-        }
-        button {
-          margin-top: 10px;
-        }
-        span {
-          margin-top: 10px;
-          font-size: 40px;
-          color: red;
         }
       }
     }

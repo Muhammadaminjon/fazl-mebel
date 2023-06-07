@@ -93,11 +93,6 @@ li {
   margin: 0 auto;
   padding: 0 20px;
 }
-@media (max-width: 400px) {
-  .container {
-    padding: 0 11px;
-  }
-}
 
 .site-btn {
   padding: 15px 35px;
